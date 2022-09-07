@@ -23,3 +23,25 @@ span {
 .d-inline {
   display: inline-block;
 }
+
+body {
+  background-color: lightgray;
+}
+
+@media (min-width: 320px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: lightpink;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: lightblue;
+  }
+}
