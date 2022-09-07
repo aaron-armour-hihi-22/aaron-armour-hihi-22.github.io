@@ -3,7 +3,14 @@ h1 {
 }
 
 #dev-academy-logo {
-  height: 120px;
+  width: 400px;
+  max-width: 50vw;
+}
+
+#logo-container {
+  margin-top: 20px;
+  vertical-align: top;
+  float: right;
 }
 
 #welcome {
