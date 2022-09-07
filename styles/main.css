@@ -11,5 +11,15 @@ span {
 }
 
 #funny-pic {
-  height: 80px;
+  height: 100px;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  border: 10px solid black;
+  margin-left: 40px;
+  border-radius: 10%;
+}
+
+.d-inline {
+  display: inline-block;
 }
