@@ -30,6 +30,7 @@ span {
 
 body {
   background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 320px) {
