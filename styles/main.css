@@ -16,7 +16,7 @@ li.horizontal-list {
   float: left;
   padding-left: 5px;
   padding-right: 5px;
-  color: grey;
+  color: white;
 }
 
 #dev-academy-logo {
@@ -59,7 +59,7 @@ li.horizontal-list {
 }
 
 div.fixed {
-  background-color: darkblue;
+  background-color: darkgrey;
   width: auto;
   position: fixed;
   top: 0;
@@ -70,7 +70,7 @@ body {
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightblue;
+  background-color: lightgrey;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -79,16 +79,25 @@ li#screen-tablet { display: none; }
 li#screen-laptop { display: none; }
 
 @media (min-width: 320px) {
+  body { background-color: lightgreen; }
+  div.fixed { background-color: darkgreen; }
+
   li#screen-unknown { display: none; }
   li#screen-mobile { display: unset;}
 }
 
 @media (min-width: 768px) {
+  body { background-color: lightpink; }
+  div.fixed { background-color: rgb(180, 89, 104); }
+
   li#screen-mobile { display: none; }
   li#screen-tablet { display: unset;}
 }
 
 @media (min-width: 1200px) {
+  body { background-color: lightblue; }
+  div.fixed { background-color: darkblue; }
+
   li#screen-tablet { display: none; }
   li#screen-laptop { display: unset;}
 }
