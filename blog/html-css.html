@@ -31,8 +31,17 @@
         <li>use a class if you are styling multiple elements.</li>
       </ul>
 
-      <p>As an example of a class <span class="code">&lt;p class="quotation"&gt;This is a really amazing quotation...&lt;/p&gt;</span> </p>
-      <p>Elements can have both a class and a style. And there can also be certain situations where you may need to use both. For example, you have a generic 'quotation' style you want to apply to paragraphs that are quotes. Amongst the quote there is a favourite paragraph and you would like to highlight this, in addition to the usual styling applied to quotes. Note that are more specific, so that in any clashes between styling from a class and styling from an id, the styling from the id will be the one that gets applied.</p>
+      <p>As an example of a class, in the HTML file <span class="code">&lt;p class="quotation"&gt;This is a really amazing quotation...&lt;/p&gt;</span>. In the CSS file there would need to be lines with styling instructions like: <span class="code">.quotation { /* CSS styling here */ }</span>. Suppose that the CSS styling was to add an indent and use a cursive font, the result might look like:</p>
+
+      <img src="../img/class-ex.JPG" alt="a text showing a quotation">
+
+      <p>As an example of how to use a class, in the HTML file <span class="code">&lt;p id="my-favourite"&gt;But of this entire quote, this bit is by far the best...&lt;/p&gt;</span>. In the CSS file there would need to be lines with styling instructions like: <span class="code">.quotation { /* CSS styling here */ }</span>. If the CSS styling simply added a yellow background to this id, the result may look like:</p>
+      
+      <img src="../img/id-ex.JPG" alt="a text showing highlighting">
+
+      <p>Elements can have both a class and a style. (For example, <span class="code">&lt;p id="my-favourite" class="quotation"&gt;But of this entire quote, this bit is by far the best...&lt;/p&gt;</span>.) And there can also be certain situations where you may need to use both. For example, you have a generic 'quotation' style you want to apply to paragraphs that are quotes. Amongst the quote there is a favourite paragraph and you would like to highlight this, in addition to the usual styling applied to quotes. Note that are more specific, so that in any clashes between styling from a class and styling from an id, the styling from the id will be the one that gets applied. If both of the class and id styling rules from the previous examples were applied in the same example (with the third paragraph having the id 'my-favourite') then the result would be:</p>
+
+      <img src="../img/class-and-id-ex.JPG" alt="a text showing a quotation with highlighting">
     </section>
 
     <section>
