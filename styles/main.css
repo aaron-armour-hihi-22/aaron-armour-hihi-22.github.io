@@ -66,6 +66,13 @@ div.fixed {
   right: 0
 }
 
+div#link-home {
+  width: fit-content;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
 .code {
   background-color: darkblue;
   color: white;
