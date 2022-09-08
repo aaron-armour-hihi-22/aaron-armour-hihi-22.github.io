@@ -66,6 +66,12 @@ div.fixed {
   right: 0
 }
 
+.code {
+  background-color: darkblue;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 body {
   width: 90vw;
   margin-left: auto;
