@@ -21,7 +21,7 @@
     <section>
     <h3>Explain control flow and loops using an example process from everyday life, for example, 'waking up' or 'brushing your teeth' (but not those).</h3>
     <p>In programming control flow refers to how the individual statements in code get run. In the absence of any control flow, statements will run one after another, from top to bottom in the file of code. However, this model would only suffice for simple programs, more complex programs require a higher level of control over how the statements are run. Certain special keywords allow more complex control flow. For example, to get some statements to only (or conditionally) run you can use <strong>if</strong> statements, or <strong>switch</strong> statements. To get blocks of statements to be run multiple times, you can use loops such as <strong>for</strong> loops or <strong>while</strong> loops.</p>
-    <p>As an example of this in everyday life, suppose you are sitting in the lounge. You are either dehydrated, or have drunk slightly excessive water. What you do next depends on which of these states you are in - this is an example of conditional flow. If you have drunk a bit too much water then you will want to leave the lounge, go to the bathroom and (I think you get the idea here!) Otherwise if you are dehydrated then you will go to the kitchen, get a cup, fill it with water and then drink. If you are still thirsty you may want to have multiple cups of water - this is an example of a loop. The pseudo-code for this example is written below in JavaScript style:</p>
+    <p>As an example of this in everyday life, suppose you are sitting in the lounge. You are either dehydrated, or have drunk slightly excessive water. What you do next depends on which of these states you are in - this is an example of conditional flow. If you have drunk a bit too much water then you will want to leave the lounge, go to the bathroom and (I think you get the idea here!) Otherwise if you are dehydrated then you will go to the kitchen, get a cup, fill it with water and then drink. If you are still thirsty you may want to have multiple cups of water - this is an example of a loop. The pseudo-code for this example is written below in JavaScript style.</p>
 
     <div class="code">
       <pre style="font-size: 3vh;">
@@ -42,13 +42,22 @@
     <section>
       <h3>what the DOM is and an example of how you might interact with it.</h3>
       <p>The Document Object Model (DOM) is a tree representation of the content of an HTML document. Using JavaScript it is possible to manipulate the DOM and this will result in changes to the webpage (although some changes may not necessarily have a visible effect).</p>
-      <p>Suppose that you want to hide or unhide a section of the page when a button is clicked. First of all you will need to write some code to detect when the button is clicked and then trigger a function call (this can be done using the onclick method of the button or adding an event listener). Then you write the function which will do the hiding or unhiding of the section of the page. One way to do this is to find the relevant section in the DOM (probably by its id) and then adding or removing a 'hide' class (which sets display: none). See below for an example of this.</p>
+      <p>Suppose that you want to hide or unhide a section of the page when a button is clicked. First of all you will need to write some code to detect when the button is clicked and then trigger a function call (this can be done using the onclick method of the button or adding an event listener). Then you write the function which will do the hiding or unhiding of the section of the page. One way to do this is to find the relevant section in the DOM (probably by its id) and then adding or removing a 'hide' class (which sets display: none). See below for how I implemented this functionality in the JavaScript Café exercise.</p>
+
+      <div>
+        <img src="../img/source-code-ex.JPG" alt="some JavaScript source code">
+      </div>
+      <br>
+      <div>
+        <img src="../img/no-transactions-hist-ex.JPG" alt="a webpage with no transaction history displayed">
+        <img src="../img/show-transactions-hist-ex.JPG" alt="a webpage displaying a box for the transaction history">
+      </div>
     </section>
 
     <section>
     <h3>Explain the difference between accessing data from arrays and objects.</h3>
     <p>Both arrays and objects support a square bracket notation, however these are used differently. The elements of an array are accessed by using the integers 0, 1, up to one less than the length of the array. Whereas, an object uses as keys its property names (as a string) between the square brackets to access the corresponding value. Objects also support a dot notation to access its values, in this case you write the object name followed by a dot and then the property name (note here that we don't provide as a string).</p>
-    <p>Below is an example to illustrate this difference:</p>
+    <p>Below is an example to illustrate this difference.</p>
 
     <div class="code">
       <pre style="font-size: 3vh;">
