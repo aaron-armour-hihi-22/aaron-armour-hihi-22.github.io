@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JS Fundamentals</title>
-    <link rel="stylesheet" href="../styles/main.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Fundamentals</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
 
-  <body>
-    <h1>JS Fundamentals</h1>
+<body>
+  <h1>JS Fundamentals</h1>
+  <h2>Discuss the following:</h2>
 
-    <h2>Discuss the following:</h2>
+  <section>
+    <h3>An analogy to describe JavaScript and its relationship to HTML and CSS.</h3>
+    <p>
+      HTML and CSS is like a team of road maintenance staff, and a visitor to the website is like a road user. The road maintenance team can make things look nice and slick and give the road user a very pleasant experience. Whereas JavaScript is like a team of roading engineers - they can close off and remove sections of the road, add completely new sections of road and change how they link up. This gives the road user a completely different experience. At times, it is kind of like the road user can talk to the team of roading engineers, and get the changes they want made instantly - the user can get a personalised experience. JavaScript has immense power to redesign a webpage, and to tailor the experience of visiting the site for individual users.
+    </p>
+  </section>
 
-    <section>
-      <h3>An analogy to describe JavaScript and its relationship to HTML and CSS.</h3>
-      <p>HTML and CSS is like a team of road maintenance staff, and a visitor to the website is like a road user. The road maintenance team can make things look nice and slick and give the road user a very pleasant experience. Whereas JavaScript is like a team of roading engineers - they can close off and remove sections of the road, add completely new sections of road and change how they link up. This gives the road user a completely different experience. At times, it is kind of like the road user can talk to the team of roading engineers, and get the changes they want made instantly - the user can get a personalised experience. JavaScript has immense power to redesign a webpage, and to tailor the experience of visiting the site for individual users.</p>
-    </section>
-
-    <section>
+  <section>
     <h3>Explain control flow and loops using an example process from everyday life, for example, 'waking up' or 'brushing your teeth' (but not those).</h3>
-    <p>In programming control flow refers to how the individual statements in code get run. In the absence of any control flow, statements will run one after another, from top to bottom in the file of code. However, this model would only suffice for simple programs, more complex programs require a higher level of control over how the statements are run. Certain special keywords allow more complex control flow. For example, to get some statements to only (or conditionally) run you can use <strong>if</strong> statements, or <strong>switch</strong> statements. To get blocks of statements to be run multiple times, you can use loops such as <strong>for</strong> loops or <strong>while</strong> loops.</p>
-    <p>As an example of this in everyday life, suppose you are sitting in the lounge. You are either dehydrated, or have drunk slightly excessive water. What you do next depends on which of these states you are in - this is an example of conditional flow. If you have drunk a bit too much water then you will want to leave the lounge, go to the bathroom and (I think you get the idea here!) Otherwise if you are dehydrated then you will go to the kitchen, get a cup, fill it with water and then drink. If you are still thirsty you may want to have multiple cups of water - this is an example of a loop. The pseudo-code for this example is written below in JavaScript style.</p>
+    <p>
+      In programming control flow refers to how the individual statements in code get run. In the absence of any control flow, statements will run one after another, from top to bottom in the file of code. However, this model would only suffice for simple programs, more complex programs require a higher level of control over how the statements are run. Certain special keywords allow more complex control flow. For example, to get some statements to only (or conditionally) run you can use <strong>if</strong> statements, or <strong>switch</strong> statements. To get blocks of statements to be run multiple times, you can use loops such as <strong>for</strong> loops or <strong>while</strong> loops.
+    </p>
+    <p>
+      As an example of this in everyday life, suppose you are sitting in the lounge. You are either dehydrated, or have drunk slightly excessive water. What you do next depends on which of these states you are in - this is an example of conditional flow. If you have drunk a bit too much water then you will want to leave the lounge, go to the bathroom and (I think you get the idea here!) Otherwise if you are dehydrated then you will go to the kitchen, get a cup, fill it with water and then drink. If you are still thirsty you may want to have multiple cups of water - this is an example of a loop. The pseudo-code for this example is written below in JavaScript style.
+    </p>
 
     <div class="code">
       <pre style="font-size: 3vh;">
@@ -37,27 +42,35 @@
         }
       }</pre>
     </div>
-    </section>
+  </section>
 
-    <section>
-      <h3>what the DOM is and an example of how you might interact with it.</h3>
-      <p>The Document Object Model (DOM) is a tree representation of the content of an HTML document. Using JavaScript it is possible to manipulate the DOM and this will result in changes to the webpage (although some changes may not necessarily have a visible effect).</p>
-      <p>Suppose that you want to hide or unhide a section of the page when a button is clicked. First of all you will need to write some code to detect when the button is clicked and then trigger a function call (this can be done using the onclick method of the button or adding an event listener). Then you write the function which will do the hiding or unhiding of the section of the page. One way to do this is to find the relevant section in the DOM (probably by its id) and then adding or removing a 'hide' class (which sets display: none). See below for how I implemented this functionality in the JavaScript Café exercise.</p>
+  <section>
+    <h3>what the DOM is and an example of how you might interact with it.</h3>
+    <p>
+      The Document Object Model (DOM) is a tree representation of the content of an HTML document. Using JavaScript it is possible to manipulate the DOM and this will result in changes to the webpage (although some changes may not necessarily have a visible effect).
+    </p>
+    <p>
+      Suppose that you want to hide or unhide a section of the page when a button is clicked. First of all you will need to write some code to detect when the button is clicked and then trigger a function call (this can be done using the onclick method of the button or adding an event listener). Then you write the function which will do the hiding or unhiding of the section of the page. One way to do this is to find the relevant section in the DOM (probably by its id) and then adding or removing a 'hide' class (which sets display: none). See below for how I implemented this functionality in the JavaScript Café exercise.
+    </p>
 
-      <div>
-        <img src="../img/source-code-ex.JPG" alt="some JavaScript source code">
-      </div>
-      <br>
-      <div>
-        <img src="../img/no-transactions-hist-ex.JPG" alt="a webpage with no transaction history displayed">
-        <img src="../img/show-transactions-hist-ex.JPG" alt="a webpage displaying a box for the transaction history">
-      </div>
-    </section>
+    <div>
+      <img src="../img/source-code-ex.JPG" alt="some JavaScript source code">
+    </div>
+    <br>
+    <div>
+      <img src="../img/no-transactions-hist-ex.JPG" alt="a webpage with no transaction history displayed">
+      <img src="../img/show-transactions-hist-ex.JPG" alt="a webpage displaying a box for the transaction history">
+    </div>
+  </section>
 
-    <section>
+  <section>
     <h3>Explain the difference between accessing data from arrays and objects.</h3>
-    <p>Both arrays and objects support a square bracket notation, however these are used differently. The elements of an array are accessed by using the integers 0, 1, up to one less than the length of the array. Whereas, an object uses as keys its property names (as a string) between the square brackets to access the corresponding value. Objects also support a dot notation to access its values, in this case you write the object name followed by a dot and then the property name (note here that we don't provide as a string).</p>
-    <p>Below is an example to illustrate this difference.</p>
+    <p>
+      Both arrays and objects support a square bracket notation, however these are used differently. The elements of an array are accessed by using the integers 0, 1, up to one less than the length of the array. Whereas, an object uses as keys its property names (as a string) between the square brackets to access the corresponding value. Objects also support a dot notation to access its values, in this case you write the object name followed by a dot and then the property name (note here that we don't provide as a string).
+    </p>
+    <p>
+      Below is an example to illustrate this difference.
+    </p>
 
     <div class="code">
       <pre style="font-size: 3vh;">
@@ -74,17 +87,22 @@
       person['age']  // this gives '31'
       person.eyeColour  // this gives 'grey'</pre>
     </div>
-    </section>
+  </section>
 
-    <section>
+  <section>
     <h3>Explain what functions are and why they are helpful.</h3>
-    <p>Functions are sort of like a small subprogram within a larger program. You can supply functions with variables from the larger program (called parameters), they can then run some statements (or none) and finally may send back (return) a value to the larger program.</p>
+    <p>
+      Functions are sort of like a small subprogram within a larger program. You can supply functions with variables from the larger program (called parameters), they can then run some statements (or none) and finally may send back (return) a value to the larger program.
+    </p>
+    <p>
+      Functions are very helpful because they allow you to create re-usable portions of code. If you are doing the same steps a number of times, then rather than repeat those each time you can wrap them up in a function and when you need to do those steps simply call the function instead. Using functions means that your code can be broken up into smaller logical pieces, which means it is likely to be more compact, better structured and more readable.
+    </p>
+  </section>
 
-    <p>Functions are very helpful because they allow you to create re-usable portions of code. If you are doing the same steps a number of times, then rather than repeat those each time you can wrap them up in a function and when you need to do those steps simply call the function instead. Using functions means that your code can be broken up into smaller logical pieces, which means it is likely to be more compact, better structured and more readable.</p>
-    </section>
-
-    <div id="link-home">
-      <p>Return to <a href="https://aaron-armour-hihi-22.github.io/index.html">home page</a>.</p>
-    </div>
-  </body>
+  <div id="link-home">
+    <p>
+      Return to <a href="https://aaron-armour-hihi-22.github.io/index.html">home page</a>.
+    </p>
+  </div>
+</body>
 </html>
