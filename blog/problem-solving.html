@@ -11,22 +11,50 @@
 <body>
   <h1>Problem Solving</h1>
   <h3>A time I was blocked on a simple problem</h3>
+  <p>
+    In the JavaScript Olympics exercise, I got stuck for a while on "EVENT 1 - Bulk Up". In the previous part of the exercise, I had created a list of athletes and the purpose of this part was to give the announcer a way to say that this athlete won and what event that was in. We did this by adding a method to each of the athlete objects. I had a pretty good idea of what I needed to do and was using a for loop to go through each of the athletes one by one and add the method. However, when I ran the code and it was being tested, the test failed and returned an error message. It took me a while to work out what the problem was, as the output from the method looked valid. For a while, I tried altering the winning message the announcer would say. After a while, I realised that the problem was, the announcer was saying the third athlete won his event when he should have been announcing the first athlete won his event. And then after adding in some console.log statements, it turned out that the announcer only ever announced the result for my third athlete (last in the list).
+  </p>
+  <p>
+    As mentioned above, I started by reading the error message and console.logging to understand it better. I tried various things, changing bits of my code, I went down some wrong paths and I did some Googling to try and work out what I was doing wrong. Then eventually (I think when I Googled about for loops) I realised that I had left out the keyword 'let' from within the 'for' statement. I think that this means that the athlete variable was made global - so all parts of the code can see it - and thus each athlete's win method ended up pointing to the data for the last athlete in the list. After I added in the 'let' keyword, the athlete variable was only visible to the block of code in the for loop and this did what I wanted.
+  </p>
+  <p>
+    I initially felt quite confused as I couldn't work out what the error was, then once I had figured it out I was still a bit confused as I couldn't work out why my code wasn't doing what I wanted (and expected it to do). I also felt quite frustrated as it took me quite a while to figure out what was going wrong and correct my code.
+  </p>
+  <p>
+    I learned the importance of getting the syntax exactly right. With some errors, things don't work at all and it is quite clear that there is a problem. In this case, the code ran, but it wasn't giving the expected answer so I found it quite tricky to troubleshoot. I'll need to be extra careful with my syntax as I think I am still getting used to JavaScript and sometimes I use the Python syntax/methods which are often similar, but have subtle differences too.
+  </p>
 
   <h3>A time I elegently solved a problem</h3>
+  <p>
+    In the JavaScript Cafe exercise last week, I think I found an elegent solution to the problem of adding a history feature where you can look back on the previous transactions.
+  </p>
+  <p>
+    I thought that it would be nice to have the transactions displayed in a section on the main cafe page and the display of the transaction history toggled with a button. I broke this problem down into smaller components and worked through each piece in turn. I got started with the HTML to display the transaction history, and initially had this hidden. I added a button to the page which says "show history", clicking on the button displays the history, and the button changes to "hide history". Clicking on the button again hides the history. I looked back at similar things we had done previously so that I could copy the relevant bits into my code. I made the transaction history a list which gets items added from the fillOrder function, and the section becomes scrollable when there are too many items to fit in the available space. I used some Google searches to figure out how to make this section scrollable. It took a bit of experimenting to get this feature working just how I wanted it, but I am very pleased with how it has turned out.
+  </p>
+  <p>
+    I enjoyed working on implementing this feature into the JavaScript Cafe. I felt excited as I was working on this, and I don't think I got stressed as things seemed to come together piece by piece. It took me some time to figure out a few aspects, but I didn't really encounter any big problems.
+  </p>
+  <p>
+    This experience reinforced the value of breaking a big problem down into smaller pieces, and also of having a clear idea of what the end result should be.
+  </p>
 
   <h3>How confident I feel using various problem-solving techniques/processes</h3>
-  <ul>
-    <li>Pseudocode</li>
-    <li>Trying something</li>
-    <li>Rubber ducky method</li>
-    <li>Reading error messages</li>
-    <li>Console.logging</li>
-    <li>Googling</li>
-    <li>Asking your peers for help</li>
-    <li>Asking coaches for help</li>
-    <li>Improving your process with reflection</li>
-  </ul>
-
+  <p> I have rated my comfort level with using each of the following methods out of five stars:
+    <ul>
+      <li>Pseudocode - &#11088; &#11088; &#11088; &#11088;</li>
+      <li>Trying something - &#11088; &#11088; &#11088; &#11088; &#11088;</li>
+      <li>Rubber ducky method - &#11088; &#11088;</li>
+      <li>Reading error messages - &#11088; &#11088; &#11088; &#11088; &#11088;</li>
+      <li>Console.logging - &#11088; &#11088; &#11088; &#11088; &#11088;</li>
+      <li>Googling - &#11088; &#11088; &#11088; &#11088; &#11088;</li>
+      <li>Asking your peers for help - &#11088; &#11088; &#11088;</li>
+      <li>Asking coaches for help - &#11088; &#11088; &#11088;</li>
+      <li>Improving your process with reflection - &#11088; &#11088;</li>
+    </ul>
+  </p>
+  <p>
+    I have a few methods which are my go to's for problem solving, these are the ones rated five stars above; trying something, reading error messages, console.logging and Googling. I should use pseudocode more than I do, but often I dive straight in to tackling a problem - sometimes this works, sometimes it doesn't. Both the rubber ducky method and reflection I am comfortable with in principle, but haven't had much experience with (I don't think I've used the rubber ducky method at all). I am comfortable asking others for help, even though I feel like I don't want to bother people, but I much prefer figuring a problem out on my own if I can. So asking for help would be one of the last things I try when I get stuck.
+  </p>
 
   <div id="link-home">
     <p>
